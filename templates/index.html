@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX Example</title>
+    <link href="/css/output.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+</head>
+<body>
+    <h1 class="text-3xl font-bold underline">Welcome to HTMX Example</h1>
+    <div hx-get="/update" hx-trigger="click" hx-target="#content">
+        <button>Click me to update content</button>
+    </div>
+    <div id="content">This is the initial content.</div>
+</body>
+</html>
